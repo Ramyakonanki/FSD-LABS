@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Larger Number</title>
+<script>
+function findLargest() {
+    let a = parseInt(prompt("Enter first number"));
+    let b = parseInt(prompt("Enter second number"));
+    let c = parseInt(prompt("Enter third number"));
+
+    if (a == b && b == c) {
+        alert("EQUAL NUMBERS");
+    }
+    else if (a > b && a > c) {
+        alert(a + " LARGER NUMBER");
+    }
+    else if (b > a && b > c) {
+        alert(b + " LARGER NUMBER");
+    }
+    else {
+        alert(c + " LARGER NUMBER");
+    }
+}
+</script>
+</head>
+
+<body>
+<button onclick="findLargest()">Find Larger Number</button>
+</body>
+</html>
