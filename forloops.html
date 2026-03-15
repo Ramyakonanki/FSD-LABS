@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Object Loop</title>
+</head>
+
+<body>
+
+<script>
+
+let student = {
+    name:"Ramya",
+    roll:4753,
+    branch:"CIC"
+};
+
+document.write("<h3>for-in loop</h3>");
+for(let key in student){
+    document.write(key + " : " + student[key] + "<br>");
+}
+
+let arr = ["Ramya","CIC","2nd Year"];
+
+document.write("<h3>for-of loop</h3>");
+for(let value of arr){
+    document.write(value+"<br>");
+}
+
+document.write("<h3>forEach loop</h3>");
+arr.forEach(function(item){
+    document.write(item+"<br>");
+});
+
+</script>
+
+</body>
+</html>
