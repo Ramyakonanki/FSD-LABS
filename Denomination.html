@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Denomination</title>
+<script>
+function denomination(){
+
+let amount = parseInt(prompt("Enter amount"));
+
+let n100 = Math.floor(amount/100);
+amount = amount%100;
+
+let n50 = Math.floor(amount/50);
+amount = amount%50;
+
+let n20 = Math.floor(amount/20);
+amount = amount%20;
+
+let n10 = Math.floor(amount/10);
+amount = amount%10;
+
+let n5 = Math.floor(amount/5);
+amount = amount%5;
+
+let n2 = Math.floor(amount/2);
+amount = amount%2;
+
+let n1 = amount;
+
+alert("100s:"+n100+
+"\n50s:"+n50+
+"\n20s:"+n20+
+"\n10s:"+n10+
+"\n5s:"+n5+
+"\n2s:"+n2+
+"\n1s:"+n1);
+
+}
+</script>
+</head>
+
+<body>
+<button onclick="denomination()">Check Denomination</button>
+</body>
+</html>
