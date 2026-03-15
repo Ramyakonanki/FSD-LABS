@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Fibonacci</title>
+<script>
+function fibonacci(){
+let n = parseInt(document.getElementById("num").value);
+
+let a=0,b=1,c;
+let output="Fibonacci Series : ";
+
+for(let i=1;i<=n;i++){
+output += a+" ";
+c=a+b;
+a=b;
+b=c;
+}
+
+document.getElementById("result").innerHTML = output;
+}
+</script>
+</head>
+
+<body>
+
+<h2>Fibonacci Program</h2>
+
+Enter Number :
+<input type="text" id="num">
+
+<br><br>
+
+<button onclick="fibonacci()">Fibonacci</button>
+
+<p id="result"></p>
+
+</body>
+</html>
