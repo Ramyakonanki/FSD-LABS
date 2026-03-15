@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Internal and External JavaScript</title>
+    <script>
+        function greetUser(){
+            document.getElementById("demo").innerHTML="Hello! This message is from Internal JavaScri[pt.";
+        }
+    
+    </script>
+    <script src = "script.js"></script>
+    </head>
+    <body>
+        <h2>Embedding Internal and External JavaScript</h2>
+        <p id="demo">Click the buttons to see messages.</p>
+        <button onclick="greetUser()">Internal JavaScript</button>
+        <button onclick="showMessage()">External JavaScript
+        </button>
+    </body>
+
+</html>
