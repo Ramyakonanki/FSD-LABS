@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Palindrome</title>
+<script>
+function palindrome(){
+let n = parseInt(document.getElementById("num").value);
+let temp=n;
+let rev=0;
+
+while(n>0){
+let r=n%10;
+rev=rev*10+r;
+n=Math.floor(n/10);
+}
+
+if(temp==rev)
+document.getElementById("result").innerHTML =
+temp+" is Palindrome Number";
+else
+document.getElementById("result").innerHTML =
+temp+" is Not Palindrome Number";
+}
+</script>
+</head>
+
+<body>
+
+<h2>Palindrome Program</h2>
+
+Enter Number :
+<input type="text" id="num">
+
+<br><br>
+
+<button onclick="palindrome()">Check Palindrome</button>
+
+<p id="result"></p>
+
+</body>
+</html>
