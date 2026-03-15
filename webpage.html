@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Input Methods</title>
+    </head>
+    <body>
+        <input type ="text" id="nameBox">
+        <button onClick="getName()">submit</button>
+        <p id="output"></p>
+        <script>
+            function getName(){
+                var name = document.getElementById("nameBox").value;
+                document.getElementById("output").innerHTML="Hello " +name+"(Input using Textbox)";
+
+            }
+            var age = prompt("Enter your age:");
+            console.log("Age entered using prompt():" +age);
+
+            var result = confirm("Do you like JavaScript?");
+            console.log("Confirm box result: "+result);
+        </script>
+
+    </body>
+</html>
